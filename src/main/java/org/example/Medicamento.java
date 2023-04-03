@@ -3,76 +3,64 @@ package org.example;
 public abstract class Medicamento {
 
 
-    String nombre;
-    int preciounitarioSINIVA;
-    int registroINVIMA;
-    String fabricante;
-    int fechadevencimiento;
-    int fechadefabricación;
+     private String nombre;
+    private double preciounitarioSINIVA;
+    private String registroINVIMA;
+    final String fabricante="Laboratorio CESDE";
+    private String fechadevencimiento;
+    private String fechadefabricacion;
+
+     final double iva=0.19;
 
     public Medicamento() {
     }
 
-    public Medicamento(String nombre, int preciounitarioSINIVA, int registroINVIMA, String fabricante, int fechadevencimiento, int fechadefabricación) {
+
+    public Medicamento(String nombre, double preciounitarioSINIVA, String registroINVIMA,  String fechadevencimiento, String fechadefabricacion) {
         this.nombre = nombre;
         this.preciounitarioSINIVA = preciounitarioSINIVA;
         this.registroINVIMA = registroINVIMA;
-        this.fabricante = fabricante;
         this.fechadevencimiento = fechadevencimiento;
-        this.fechadefabricación = fechadefabricación;
+        this.fechadefabricacion = fechadefabricacion;
     }
 
     public String getNombre() {
-
-
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
-    public int getPreciounitarioSINIVA() {
+    public double getPreciounitarioSINIVA() {
         return preciounitarioSINIVA;
     }
 
-    public void setPreciounitarioSINIVA(int preciounitarioSINIVA) {
-        this.preciounitarioSINIVA = preciounitarioSINIVA;
-    }
 
-    public int getRegistroINVIMA() {
+    public String getRegistroINVIMA() {
         return registroINVIMA;
     }
 
-    public void setRegistroINVIMA(int registroINVIMA) {
-        this.registroINVIMA = registroINVIMA;
-    }
 
     public String getFabricante() {
         return fabricante;
     }
 
-    public void setFabricante(String fabricante) {
-        this.fabricante = fabricante;
-    }
 
-    public int getFechadevencimiento() {
+    public String getFechadevencimiento() {
         return fechadevencimiento;
     }
 
-    public void setFechadevencimiento(int fechadevencimiento) {
-        this.fechadevencimiento = fechadevencimiento;
+
+    public String getFechadefabricacion() {
+        return fechadefabricacion;
     }
 
-    public int getFechadefabricación() {
-        return fechadefabricación;
+
+    public double getIva() {
+        return iva;
     }
 
-    public void setFechadefabricación(int fechadefabricación) {
-        this.fechadefabricación = fechadefabricación;
-    }
 
-    public abstract float ValorDescuentoTipo();
+
+    public abstract double ValorDescuentoTipo();
 
 
 

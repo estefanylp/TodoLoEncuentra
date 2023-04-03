@@ -4,12 +4,14 @@ public class Tipo4 extends Medicamento{
     public Tipo4() {
     }
 
-    public Tipo4(String nombre, Int preciounitarioSINIVA, int registroINVIMA, String fabricante, int fechadevencimiento, int fechadefabricación) {
-        super(nombre, preciounitarioSINIVA, registroINVIMA, fabricante, fechadevencimiento, fechadefabricación);
+    public Tipo4(String nombre, double preciounitarioSINIVA, String registroINVIMA, String fechadevencimiento, String fechadefabricacion) {
+        super(nombre, preciounitarioSINIVA, registroINVIMA, fechadevencimiento, fechadefabricacion);
+
     }
 
     @Override
-    public float ValorDescuentoTipo() {
-        return 0.10f;
+    public double ValorDescuentoTipo() {
+
+        return 0.10;
     }
 }
