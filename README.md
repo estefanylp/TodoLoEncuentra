@@ -1,4 +1,2 @@
-#Farmacia todo lo Encuentra || Momento 2 JAVA Examen 2
-
-
+# Farmacia Todo Lo Encuentra || Momento 2 JAVA Examen1
 Grupo: ºMariana Zapata Acosta, ºEstefany Lopez Perez, ºJuan Pablo Avendaño.
